@@ -14,7 +14,7 @@ module.exports = {
         publicPath: '/dist/'
     },
     devServer: {
-        port: 80,
+        port: 8000,
         contentBase: path.join(__dirname, './public'),
         proxy: {
             "/api": {

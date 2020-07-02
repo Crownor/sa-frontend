@@ -56,7 +56,7 @@ export default {
     };
   },
   async created() {
-    this.filter = this.$route.params.filter;
+    this.filter = localStorage.getItem('s_filter');
     this.loading = this.$loading({
       lock: true,
       text: '加载中',

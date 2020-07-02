@@ -51,7 +51,8 @@ export default {
     },
     onSearch(){
       if(this.filter){
-        this.$router.push(`/search/${this.filter}`);
+        localStorage.setItem('s_filter', this.filter);
+        this.$router.push(`/search`);
       }else{
         this.$message.error('请输入搜索词');
       }
